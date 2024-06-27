@@ -1,0 +1,104 @@
+.project-pass-and-fail-ratio {
+    background-color: var(--part);
+    height: 39.44%;
+    border-radius: 8px;
+    animation: slideInFromRight 2s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.ratio-section {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    color: #87888C;
+}
+
+.ratio-place {
+    text-align: center;
+}
+
+.ratio-number {
+    width: 10%;
+}
+
+.ratio-project {
+    width: 30%;
+}
+
+.ratio-passandfail {
+    width: 40%;
+}
+
+.ratio-percentage {
+    width: 20%;
+}
+.ratio-container{
+    overflow-y: scroll;
+    border-top:solid 1px rgba(255,255,255, 6%);
+    width: 90%;
+    height: 90%;
+    /* background-color: red; */
+}
+.ratio-graph-section {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+}
+.ratio-graph-place{
+    font-size: 12px;
+    text-align: center;
+}
+.ratio-graph-number {
+    font-size: 15px;
+    width: 10%;
+}
+
+.ratio-graph-project {
+    width: 30%;
+}
+
+.ratio-graph {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-ratio-graph{
+    position: relative;
+    border-radius: 8px;
+    width: 80%;
+    height: 10%;
+    background-color: #2B2B36;
+}
+
+.ratio-graph-percentage {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.percent{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    border: solid 1px  #FCB859;
+    border-radius: 4px;
+    background-color: rgba(252,184,9, 12%);
+}

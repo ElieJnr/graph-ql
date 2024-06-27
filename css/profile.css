@@ -1,0 +1,446 @@
+:root {
+    --part: #0B1739;
+    --background: #081028;
+    --texte: #ffffff;
+    --rosedeg: #F182BF;
+    --rosbon: #FFA7CD;
+    --button: #E535AB;
+}
+
+/* body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} */
+
+/* Add the following CSS to hide the scrollbars */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    width: 0;
+}
+
+.profile-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.profile-header-container {
+    padding-top:1%;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.profile-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+}
+
+.down {
+    animation: profile-animation 1s ease-in-out;
+}
+
+@keyframes profile-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.name-place {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--texte);
+}
+
+.zeroUnTalent {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.profile-body {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.left-profileside {
+    width: 34.75%;
+    height: 85%;
+}
+
+.left-upper-part {
+    width: 100%;
+    height: 48%;
+    background-color: var(--part);
+    border-radius: 8px;
+    animation: slideInFromLeft 2s forwards;
+}
+
+.left-bottom-part {
+    display: flex;
+    justify-content: center;
+    height: 63.5%;
+    text-align: center;
+    align-items: flex-end;
+}
+
+
+
+.connect-button-quit {
+    margin-top: 2%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.button-text-quit {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.the-text-quit {
+    color: var(--texte);
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: 'Dm sans', sans-serif;
+}
+
+.button-circle-quit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--button) 1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.button-circle-quit img {
+    width: 0;
+    position: relative;
+    left: -6px;
+    transition: left 0.7s ease;
+    color: var(--button);
+}
+
+.connect-button-quit:hover .button-circle-quit img {
+    width: 32px;
+    left: 0;
+}
+
+.connect-button-quit:hover .button-circle-quit {
+    width: 40px;
+    height: 40px;
+}
+
+.underlined-quit {
+    width: 100%;
+    background-color: var(--texte);
+    height: 1px;
+    transition: width 0.3s ease;
+}
+
+.connect-button-quit:hover .underlined-quit {
+    width: 0px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.right-profileside {
+    height: 100%;
+    width: 54.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.xp-earned-per-project {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--part);
+    height: 47.33%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    animation: slideInFromRight 2s forwards;
+}
+
+.xp-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 8px;
+}
+
+.xp-graph {
+    height: 86%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.xp-earned {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    height: 89%;
+    font-size: 11px;
+    justify-content: space-between;
+    /* border-right: solid 0.5px white; */
+}
+
+.xp-svg-place {
+    width: 80%;
+    height: 100%;
+}
+
+.project-pass-and-fail-ratio {
+    background-color: var(--part);
+    height: 45.44%;
+    border-radius: 8px;
+    animation: slideInFromRight 2s forwards;
+}
+
+.xp-bar {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.xp-bar-container {
+    /* position: relative; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.xp-bar-svg {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.xp-project-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 10.31px;
+    font-weight: 500;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 4ch;
+    /* transform: rotate(-90deg); */
+}
+
+.the-xp-svg {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--rosedeg), rgba(241, 130, 191, 1));
+    height: 20%;
+    bottom: 0;
+    border-radius: 12px;
+}
+
+.charge-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--part)
+}
+
+.charge-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--part)
+}
+
+.charge-name {
+    width: 200px;
+    height: 13px;
+    border-radius: 8px;
+    background-color: var(--part)
+}
+
+.charge-function {
+    width: 42px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: var(--part)
+}
+
+@keyframes charge-animation {
+    0% {
+        background-color: rgba(108, 122, 137, 0.6);
+    }
+
+    50% {
+        background-color: rgba(108, 122, 137, 0.5);
+
+    }
+
+    100% {
+        background-color: rgba(108, 122, 137, 0.6);
+    }
+}
+
+.the-name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.charge-xp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 86%;
+    /* background-color: var(--part); */
+    border-radius: 12px;
+}
+
+.spinner {
+    --size: 30px;
+    --color: #F182BF;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.spinner::after,
+.spinner::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    top: 50%;
+    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    left: 50%;
+    background: var(--color);
+    box-shadow: 0 0 calc(var(--size) / 3) rgba(0, 0, 0, 0.25);
+}
+
+.spinner::after {
+    background: var(--color);
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+@keyframes down {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes up {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+
+    75% {
+        transform: translateY(-100%);
+    }
+}
