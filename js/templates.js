@@ -101,7 +101,7 @@ export const landingPage = `
     </div>`
 
 const charge = `
-    <div class="profile-container">
+    <div class="profile-container-charge">
         <div class="profile-header-container">
             <div class="profile-logo charge charge-logo">
 
@@ -244,8 +244,23 @@ export function serveUserPage(user, xp, projectlength) {
     </div>`
     const body = document.body
     body.innerHTML = charge
-    setTimeout(() => {
+
+    setTimeout(()=>{
         body.innerHTML = userpage
+    },1990)
+
+    setTimeout(() => {
+        let profile=document.getElementsByClassName('profile-container')[0]
+        profile.style=`
+            width: 100%;
+            height: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1%;
+        `
     }, 2000)
 
 }
